@@ -1,2 +1,3 @@
 # bash-scripts
-personal bash scripts collection
+
+<img src="bash-icon.png"> personal bash scripts collection
