@@ -8,7 +8,7 @@
 ### clone this repo
 
 ```
-cd ~/Desktop
+cd ~/Downloads
 git clone https://github.com/MarkHershey/bash-scripts.git
 ```
 
@@ -17,7 +17,7 @@ git clone https://github.com/MarkHershey/bash-scripts.git
 ```
 cd ~
 mkdir bin
-cp ~/Desktop/bash-scripts/bin/gitignore ~/bin/gitignore
+cp ~/Downloads/bash-scripts/bin/gitignore ~/bin/gitignore
 
 ```
 
@@ -65,7 +65,7 @@ Close all Terminal windows and quit Terminal entirely. Open Terminal again, chec
 echo $PATH
 ```
 
-### Execute the bash script from anywhere
+### Execute the script from anywhere
 
 ```
 cd project_folder/
