@@ -154,11 +154,31 @@ dmypy.json
 .pyre/
 EOL
 
-echo "Committing $FILE"
-git add .gitignore
-git commit -m "Added .gitignore"
+echo "$FILE has been created"
+while true; do
+    read -p "Do you wish to commit it (y/n)?" yn
+    case $yn in
+        [Yy]* ) echo "Committing $FILE"; git add .gitignore; git commit -m "Added .gitignore"; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer 'y' for Yes or 'n' for No.";;
+    esac
+done
 
-echo "Pushing $FILE"
-git push origin master
+while true; do
+    read -p "Do you wish to push it to master branch (y/n)?" yn
+    case $yn in
+        [Yy]* ) echo "Pushing $FILE"; git push origin master; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer 'y' for Yes or 'n' for No.";;
+    esac
+done
+
+
+# echo "Committing $FILE"
+# git add .gitignore
+# git commit -m "Added .gitignore"
+#
+# echo "Pushing $FILE"
+# git push origin master
 
 fi
