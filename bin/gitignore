@@ -10,8 +10,7 @@ else
     touch .gitignore
 
     cat >.gitignore <<EOL
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -19,7 +18,6 @@ else
 .Trashes
 ehthumbs.db
 Thumbs.db
-
 
 ### Python gitignore from https://github.com/github/gitignore/blob/master/Python.gitignore
 
@@ -158,7 +156,7 @@ echo "$FILE has been created"
 while true; do
     read -p "Do you wish to commit it (y/n)?" yn
     case $yn in
-        [Yy]* ) echo "Committing $FILE"; git add .gitignore; git commit -m "Added .gitignore"; break;;
+        [Yy]* ) echo "Committing $FILE"; git add .gitignore; git commit -m "Add .gitignore"; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer 'y' for Yes or 'n' for No.";;
     esac
