@@ -154,7 +154,7 @@ EOL
 
 echo "$FILE has been created"
 while true; do
-    read -p "Do you wish to commit it (y/n)?" yn
+    read -p -r "Do you wish to commit it (y/n)?" yn
     case $yn in
         [Yy]* ) echo "Committing $FILE"; git add .gitignore; git commit -m "Add .gitignore"; break;;
         [Nn]* ) exit;;
@@ -163,7 +163,7 @@ while true; do
 done
 
 while true; do
-    read -p "Do you wish to push it to master branch (y/n)?" yn
+    read -p -r "Do you wish to push it to master branch (y/n)?" yn
     case $yn in
         [Yy]* ) echo "Pushing $FILE"; git push origin master; break;;
         [Nn]* ) exit;;
