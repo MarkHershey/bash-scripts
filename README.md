@@ -1,5 +1,7 @@
 # bash scripts
 
+![](https://github.com/MarkHershey/bash-scripts/workflows/Shellcheck/badge.svg?branch=master)
+
 <img src="bash-icon.png"> personal bash scripts collection
 
 
